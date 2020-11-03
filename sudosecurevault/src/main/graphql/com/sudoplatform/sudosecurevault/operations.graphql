@@ -1,0 +1,112 @@
+# this is an auto generated file. This will be overwritten
+query GetInitializationData {
+  getInitializationData {
+    owner
+    encryptionSalt
+    authenticationSalt
+    pbkdfRounds
+  }
+}
+query GetVault($token: String!, $id: ID!) {
+  getVault(token: $token, id: $id) {
+    id
+    version
+    createdAtEpochMs
+    updatedAtEpochMs
+    owner
+    blob
+    blobFormat
+    encryptionMethod
+    owners {
+      id
+      issuer
+    }
+  }
+}
+query ListVaults($token: String!, $limit: Int, $nextToken: String) {
+  listVaults(token: $token, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      version
+      createdAtEpochMs
+      updatedAtEpochMs
+      owner
+      blob
+      blobFormat
+      encryptionMethod
+      owners {
+        id
+        issuer
+      }
+    }
+    nextToken
+  }
+}
+query ListVaultsMetadataOnly($limit: Int, $nextToken: String) {
+  listVaultsMetadataOnly(limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      version
+      createdAtEpochMs
+      updatedAtEpochMs
+      owner
+      blobFormat
+      encryptionMethod
+      owners {
+        id
+        issuer
+      }
+    }
+    nextToken
+  }
+}
+mutation CreateVault($input: CreateVaultInput) {
+  createVault(input: $input) {
+    id
+    version
+    createdAtEpochMs
+    updatedAtEpochMs
+    owner
+    blobFormat
+    encryptionMethod
+    owners {
+      id
+      issuer
+    }
+  }
+}
+mutation UpdateVault($input: UpdateVaultInput) {
+  updateVault(input: $input) {
+    id
+    version
+    createdAtEpochMs
+    updatedAtEpochMs
+    owner
+    blobFormat
+    encryptionMethod
+    owners {
+      id
+      issuer
+    }
+  }
+}
+mutation DeleteVault($input: DeleteVaultInput) {
+  deleteVault(input: $input) {
+    id
+    version
+    createdAtEpochMs
+    updatedAtEpochMs
+    owner
+    blobFormat
+    encryptionMethod
+    owners {
+      id
+      issuer
+    }
+  }
+}
+mutation Deregister {
+  deregister {
+    username
+  }
+}

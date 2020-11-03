@@ -1,0 +1,2 @@
+include ':sudosecurevault'
+rootProject.name='SudoSecureVaultAndroid'

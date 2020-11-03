@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="SudoSecureVaultClientTest" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6c6bed93-a145-4813-95db-1f3ceb4ace82" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_23" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/sudosecurevault">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sudo-secure-vault-android" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sudo-secure-vault-android" type="f1a62948:ProjectNode" />
+                <item name="sudosecurevault" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sudo-secure-vault-android" type="f1a62948:ProjectNode" />
+                <item name="sudosecurevault" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sudo-secure-vault-android" type="f1a62948:ProjectNode" />
+                <item name="sudosecurevault" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="android" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bVeAhqlf7P32Iyi3ME7iQNKqDN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="not.eligible.for.single.variant.sync" value="true" />
+    <property name="project.structure.last.edited" value="Dependencies" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="Android Instrumented Tests.SudoSecureVaultClientTest">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SudoSecureVaultClientTest" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="sudosecurevault" />
+      <option name="TESTING_TYPE" value="2" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="com.sudoplatform.sudosecurevault.SudoSecureVaultClientTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="INCLUDE_GRADLE_EXTRA_OPTIONS" value="true" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testCustomFSSO()" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="sudosecurevault" />
+      <option name="TESTING_TYPE" value="3" />
+      <option name="METHOD_NAME" value="testCustomFSSO" />
+      <option name="CLASS_NAME" value="com.sudoplatform.sudosecurevault.SudoSecureVaultClientTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="INCLUDE_GRADLE_EXTRA_OPTIONS" value="true" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testRegister()" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="sudosecurevault" />
+      <option name="TESTING_TYPE" value="3" />
+      <option name="METHOD_NAME" value="testRegister" />
+      <option name="CLASS_NAME" value="com.sudoplatform.sudosecurevault.SudoSecureVaultClientTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="INCLUDE_GRADLE_EXTRA_OPTIONS" value="true" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testSignIn()" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="sudosecurevault" />
+      <option name="TESTING_TYPE" value="3" />
+      <option name="METHOD_NAME" value="testSignIn" />
+      <option name="CLASS_NAME" value="com.sudoplatform.sudosecurevault.SudoSecureVaultClientTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="INCLUDE_GRADLE_EXTRA_OPTIONS" value="true" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SudoSecureVaultClientUnitTest.testRegisterWithAuthenticationProvider" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sudosecurevault" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sudoplatform.sudosecurevault.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sudoplatform.sudosecurevault" />
+      <option name="MAIN_CLASS_NAME" value="com.sudoplatform.sudosecurevault.SudoSecureVaultClientUnitTest" />
+      <option name="METHOD_NAME" value="testRegisterWithAuthenticationProvider" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SudoSecureVaultClientUnitTest.testRegisterWithAuthenticationProvider" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sudosecurevault" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sudoplatform.sudosecurevault.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sudoplatform.sudosecurevault" />
+      <option name="MAIN_CLASS_NAME" value="com.sudoplatform.sudosecurevault.SudoSecureVaultClientUnitTest" />
+      <option name="METHOD_NAME" value="testRegisterWithAuthenticationProvider" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Android Instrumented Tests.testRegister()" />
+\      <item itemvalue="Android Instrumented Tests.SudoSecureVaultClientTest" />
+      <item itemvalue="Android Instrumented Tests.testSignIn()" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Android Instrumented Tests.SudoSecureVaultClientTest" />
+        <item itemvalue="Android Instrumented Tests.testRegister()" />
+        <item itemvalue="Android Instrumented Tests.testSignIn()" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6c6bed93-a145-4813-95db-1f3ceb4ace82" name="Default Changelist" comment="" />
+      <created>1571878551083</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571878551083</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="424" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594186603589">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="424" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.979@0.23.1920.979" timestamp="1594186603589" />
+    <state x="424" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.981@0.23.1920.981" timestamp="1594186205230" />
+    <state x="723" y="222" key="#xdebugger.evaluate" timestamp="1594181619131">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="723" y="222" key="#xdebugger.evaluate/0.23.1920.979@0.23.1920.979" timestamp="1594181619131" />
+    <state width="515" height="466" key="DebuggerActiveHint" timestamp="1594188014892">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state width="515" height="466" key="DebuggerActiveHint/0.23.1920.979@0.23.1920.979" timestamp="1594188014892" />
+    <state x="100" y="123" width="1720" height="779" key="DiffContextDialog" timestamp="1594191045426">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="100" y="123" width="1720" height="777" key="DiffContextDialog/0.23.1920.977@0.23.1920.977" timestamp="1594180337645" />
+    <state x="100" y="123" width="1720" height="779" key="DiffContextDialog/0.23.1920.979@0.23.1920.979" timestamp="1594191045426" />
+    <state width="1878" height="317" key="GridCell.Tab.0.bottom" timestamp="1596018941432">
+      <screen x="0" y="23" width="1920" height="976" />
+    </state>
+    <state width="1878" height="317" key="GridCell.Tab.0.bottom/0.23.1920.976@0.23.1920.976" timestamp="1596018941432" />
+    <state width="1878" height="317" key="GridCell.Tab.0.bottom/0.23.1920.979@0.23.1920.979" timestamp="1595992707118" />
+    <state width="1878" height="319" key="GridCell.Tab.0.bottom/0.23.1920.981@0.23.1920.981" timestamp="1594186382179" />
+    <state width="1878" height="317" key="GridCell.Tab.0.center" timestamp="1596018941431">
+      <screen x="0" y="23" width="1920" height="976" />
+    </state>
+    <state width="1878" height="317" key="GridCell.Tab.0.center/0.23.1920.976@0.23.1920.976" timestamp="1596018941431" />
+    <state width="1878" height="317" key="GridCell.Tab.0.center/0.23.1920.979@0.23.1920.979" timestamp="1595992707118" />
+    <state width="1878" height="319" key="GridCell.Tab.0.center/0.23.1920.981@0.23.1920.981" timestamp="1594186382179" />
+    <state width="1878" height="317" key="GridCell.Tab.0.left" timestamp="1596018941431">
+      <screen x="0" y="23" width="1920" height="976" />
+    </state>
+    <state width="1878" height="317" key="GridCell.Tab.0.left/0.23.1920.976@0.23.1920.976" timestamp="1596018941431" />
+    <state width="1878" height="317" key="GridCell.Tab.0.left/0.23.1920.979@0.23.1920.979" timestamp="1595992707118" />
+    <state width="1878" height="319" key="GridCell.Tab.0.left/0.23.1920.981@0.23.1920.981" timestamp="1594186382179" />
+    <state width="1878" height="317" key="GridCell.Tab.0.right" timestamp="1596018941432">
+      <screen x="0" y="23" width="1920" height="976" />
+    </state>
+    <state width="1878" height="317" key="GridCell.Tab.0.right/0.23.1920.976@0.23.1920.976" timestamp="1596018941432" />
+    <state width="1878" height="317" key="GridCell.Tab.0.right/0.23.1920.979@0.23.1920.979" timestamp="1595992707118" />
+    <state width="1878" height="319" key="GridCell.Tab.0.right/0.23.1920.981@0.23.1920.981" timestamp="1594186382179" />
+    <state width="1878" height="317" key="GridCell.Tab.1.bottom" timestamp="1596018941432">
+      <screen x="0" y="23" width="1920" height="976" />
+    </state>
+    <state width="1878" height="317" key="GridCell.Tab.1.bottom/0.23.1920.976@0.23.1920.976" timestamp="1596018941432" />
+    <state width="1878" height="317" key="GridCell.Tab.1.bottom/0.23.1920.979@0.23.1920.979" timestamp="1595992694229" />
+    <state width="1878" height="319" key="GridCell.Tab.1.bottom/0.23.1920.981@0.23.1920.981" timestamp="1594186382180" />
+    <state width="1878" height="317" key="GridCell.Tab.1.center" timestamp="1596018941432">
+      <screen x="0" y="23" width="1920" height="976" />
+    </state>
+    <state width="1878" height="317" key="GridCell.Tab.1.center/0.23.1920.976@0.23.1920.976" timestamp="1596018941432" />
+    <state width="1878" height="317" key="GridCell.Tab.1.center/0.23.1920.979@0.23.1920.979" timestamp="1595992694229" />
+    <state width="1878" height="319" key="GridCell.Tab.1.center/0.23.1920.981@0.23.1920.981" timestamp="1594186382179" />
+    <state width="1878" height="317" key="GridCell.Tab.1.left" timestamp="1596018941432">
+      <screen x="0" y="23" width="1920" height="976" />
+    </state>
+    <state width="1878" height="317" key="GridCell.Tab.1.left/0.23.1920.976@0.23.1920.976" timestamp="1596018941432" />
+    <state width="1878" height="317" key="GridCell.Tab.1.left/0.23.1920.979@0.23.1920.979" timestamp="1595992694229" />
+    <state width="1878" height="319" key="GridCell.Tab.1.left/0.23.1920.981@0.23.1920.981" timestamp="1594186382179" />
+    <state width="1878" height="317" key="GridCell.Tab.1.right" timestamp="1596018941432">
+      <screen x="0" y="23" width="1920" height="976" />
+    </state>
+    <state width="1878" height="317" key="GridCell.Tab.1.right/0.23.1920.976@0.23.1920.976" timestamp="1596018941432" />
+    <state width="1878" height="317" key="GridCell.Tab.1.right/0.23.1920.979@0.23.1920.979" timestamp="1595992694229" />
+    <state width="1878" height="319" key="GridCell.Tab.1.right/0.23.1920.981@0.23.1920.981" timestamp="1594186382180" />
+    <state x="461" y="150" key="SettingsEditor" timestamp="1594945002562">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="461" y="150" key="SettingsEditor/0.23.1920.979@0.23.1920.979" timestamp="1594945002562" />
+    <state width="960" height="490" key="XDebugger.FullValuePopup" timestamp="1595989851031">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state width="960" height="490" key="XDebugger.FullValuePopup/0.23.1920.979@0.23.1920.979" timestamp="1595989851031" />
+    <state x="100" y="123" width="1720" height="775" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1595987841791">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="100" y="123" width="1720" height="775" key="com.android.tools.idea.avdmanager.AvdListDialog/0.23.1920.977@0.23.1920.977" timestamp="1595987841791" />
+    <state x="100" y="123" width="1720" height="776" key="com.android.tools.idea.avdmanager.AvdListDialog/0.23.1920.979@0.23.1920.979" timestamp="1595984786565" />
+    <state x="612" y="269" width="929" height="488" key="find.popup" timestamp="1602657029284">
+      <screen x="0" y="23" width="1920" height="979" />
+    </state>
+    <state x="612" y="268" width="695" height="486" key="find.popup/0.23.1920.976@0.23.1920.976" timestamp="1598404307279" />
+    <state x="612" y="269" width="929" height="488" key="find.popup/0.23.1920.979@0.23.1920.979" timestamp="1602657029284" />
+    <state x="625" y="237" width="670" height="674" key="search.everywhere.popup" timestamp="1598404301962">
+      <screen x="0" y="23" width="1920" height="976" />
+    </state>
+    <state x="625" y="237" width="670" height="674" key="search.everywhere.popup/0.23.1920.976@0.23.1920.976" timestamp="1598404301962" />
+    <state x="625" y="238" width="670" height="676" key="search.everywhere.popup/0.23.1920.979@0.23.1920.979" timestamp="1594189396590" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
