@@ -9,7 +9,7 @@ open class SudoSecureVaultException(message: String? = null, cause: Throwable? =
         private const val GRAPHQL_ERROR_TOKEN_NOT_AUTHORIZED_ERROR = "sudoplatform.vault.NotAuthorizedError"
         private const val GRAPHQL_ERROR_INVALID_OWNERSHIP_PROOF_ERROR = "sudoplatform.vault.InvalidOwnershipProofError"
         private const val GRAPHQL_ERROR_TOKEN_VALIDATION_ERROR = "sudoplatform.vault.TokenValidationError"
-        private const val GRAPHQL_ERROR_POLICY_ERROR = "sudoplatform.PolicyFailed"
+        private const val GRAPHQL_ERROR_INSUFFICIENT_ENTITLEMENTS_ERROR = "sudoplatform.InsufficientEntitlementsError"
         private const val GRAPHQL_ERROR_CONDITIONAL_CHECK_FAILED =
             "DynamoDB:ConditionalCheckFailedException"
         private const val GRAPHQL_ERROR_SERVICE_ERROR = "sudoplatform.ServiceError"
@@ -22,7 +22,7 @@ open class SudoSecureVaultException(message: String? = null, cause: Throwable? =
                 GRAPHQL_ERROR_TOKEN_NOT_AUTHORIZED_ERROR -> NotAuthorizedException(this.message())
                 GRAPHQL_ERROR_TOKEN_VALIDATION_ERROR -> NotAuthorizedException(this.message())
                 GRAPHQL_ERROR_INVALID_OWNERSHIP_PROOF_ERROR -> InvalidOwnershipProofException(this.message())
-                GRAPHQL_ERROR_POLICY_ERROR -> PolicyFailedException(this.message())
+                GRAPHQL_ERROR_INSUFFICIENT_ENTITLEMENTS_ERROR -> InsufficientEntitlementsException(this.message())
                 GRAPHQL_ERROR_CONDITIONAL_CHECK_FAILED -> VersionMismatchException(this.message())
                 GRAPHQL_ERROR_SERVICE_ERROR -> InternalServerException(this.message())
                 else -> GraphQLException(this.message())
@@ -63,7 +63,7 @@ open class SudoSecureVaultException(message: String? = null, cause: Throwable? =
     /**
      * Indicates the user does not have sufficient entitlements to perform the requested operation.
      */
-    class PolicyFailedException(message: String? = null, cause: Throwable? = null) :
+    class InsufficientEntitlementsException(message: String? = null, cause: Throwable? = null) :
         SudoSecureVaultException(message = message, cause = cause)
 
     /**
