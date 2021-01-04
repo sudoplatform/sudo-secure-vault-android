@@ -289,7 +289,7 @@ interface SudoSecureVaultClient {
      * @return Username of the newly registered user.
      */
     @Throws(SudoSecureVaultException::class)
-    suspend fun register(key: ByteArray, password: CharArray): String
+    suspend fun register(key: ByteArray, password: ByteArray): String
 
     /**
      * Indicates whether or not this client is registered with Sudo Platform backend.
@@ -323,7 +323,7 @@ interface SudoSecureVaultClient {
     @Throws(SudoSecureVaultException::class)
     suspend fun createVault(
         key: ByteArray,
-        password: CharArray,
+        password: ByteArray,
         blob: ByteArray,
         blobFormat: String,
         ownershipProof: String
@@ -344,7 +344,7 @@ interface SudoSecureVaultClient {
     @Throws(SudoSecureVaultException::class)
     suspend fun updateVault(
         key: ByteArray,
-        password: CharArray,
+        password: ByteArray,
         id: String,
         version: Int,
         blob: ByteArray,
@@ -373,7 +373,7 @@ interface SudoSecureVaultClient {
     @Throws(SudoSecureVaultException::class)
     suspend fun getVault(
         key: ByteArray,
-        password: CharArray,
+        password: ByteArray,
         id: String
     ): Vault?
 
@@ -387,7 +387,7 @@ interface SudoSecureVaultClient {
      *
      */
     @Throws(SudoSecureVaultException::class)
-    suspend fun listVaults(key: ByteArray, password: CharArray): List<Vault>
+    suspend fun listVaults(key: ByteArray, password: ByteArray): List<Vault>
 
     /**
      * Retrieves metadata for all vaults. This can be used to determine if any vault was
@@ -409,8 +409,8 @@ interface SudoSecureVaultClient {
     @Throws(SudoSecureVaultException::class)
     suspend fun changeVaultPassword(
         key: ByteArray,
-        oldPassword: CharArray,
-        newPassword: CharArray
+        oldPassword: ByteArray,
+        newPassword: ByteArray
     )
 
     /**
@@ -537,7 +537,7 @@ class DefaultSudoSecureVaultClient(
             .build()
     }
 
-    override suspend fun register(key: ByteArray, password: CharArray): String {
+    override suspend fun register(key: ByteArray, password: ByteArray): String {
         this.logger.info("Registering a new vault user.")
 
         val sub = this.sudoUserClient.getSubject()
@@ -605,7 +605,7 @@ class DefaultSudoSecureVaultClient(
 
     override suspend fun createVault(
         key: ByteArray,
-        password: CharArray,
+        password: ByteArray,
         blob: ByteArray,
         blobFormat: String,
         ownershipProof: String
@@ -678,7 +678,7 @@ class DefaultSudoSecureVaultClient(
 
     override suspend fun updateVault(
         key: ByteArray,
-        password: CharArray,
+        password: ByteArray,
         id: String,
         version: Int,
         blob: ByteArray,
@@ -786,7 +786,7 @@ class DefaultSudoSecureVaultClient(
         )
     }
 
-    override suspend fun getVault(key: ByteArray, password: CharArray, id: String): Vault? {
+    override suspend fun getVault(key: ByteArray, password: ByteArray, id: String): Vault? {
         this.logger.info("Retrieving a vault: $id")
 
         if (!this.sudoUserClient.isSignedIn()) {
@@ -856,7 +856,7 @@ class DefaultSudoSecureVaultClient(
         )
     }
 
-    override suspend fun listVaults(key: ByteArray, password: CharArray): List<Vault> {
+    override suspend fun listVaults(key: ByteArray, password: ByteArray): List<Vault> {
         this.logger.info("Listing vaults.")
 
         if (!this.sudoUserClient.isSignedIn()) {
@@ -973,8 +973,8 @@ class DefaultSudoSecureVaultClient(
 
     override suspend fun changeVaultPassword(
         key: ByteArray,
-        oldPassword: CharArray,
-        newPassword: CharArray
+        oldPassword: ByteArray,
+        newPassword: ByteArray
     ) {
         this.logger.info("Changing vault password.")
 
@@ -1080,25 +1080,17 @@ class DefaultSudoSecureVaultClient(
      */
     private fun generateSecretKeyBytes(
         key: ByteArray,
-        password: CharArray,
+        password: ByteArray,
         salt: ByteArray,
         rounds: Int
     ): ByteArray {
-        // Convert key bytes to char array since Java PBKDF API only accepts char array. According to Java documentation
-        // PBEKeySpec takes only lower 8 bits of the character.
-        val keyAsCharArray = CharArray(key.size)
-        for (i in key.indices) {
-            keyAsCharArray[i] = key[i].toChar()
-        }
-
         // Stretch the key by performing 1 round of PBKDF.
-        val keyBits = this.keyManager.createSymmetricKeyFromPassword(keyAsCharArray, salt, 1)
+        val keyBits = this.keyManager.createSymmetricKeyFromPassword(key, salt, 1)
         val passwordBits = this.keyManager.createSymmetricKeyFromPassword(password, salt, rounds)
         val xor = passwordBits.xor(keyBits)
 
         keyBits.fill(0)
         passwordBits.fill(0)
-        keyAsCharArray.fill(0.toChar())
 
         return xor
     }
@@ -1114,7 +1106,7 @@ class DefaultSudoSecureVaultClient(
      */
     private fun encrypt(
         key: ByteArray,
-        password: CharArray,
+        password: ByteArray,
         data: ByteArray,
         salt: ByteArray,
         rounds: Int
@@ -1145,7 +1137,7 @@ class DefaultSudoSecureVaultClient(
      */
     private fun decrypt(
         key: ByteArray,
-        password: CharArray,
+        password: ByteArray,
         data: ByteArray,
         salt: ByteArray,
         rounds: Int
