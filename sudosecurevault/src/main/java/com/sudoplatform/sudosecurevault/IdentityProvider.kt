@@ -107,6 +107,7 @@ internal class CognitoUserPoolIdentityProvider(
 
         const val SERVICE_ERROR_SERVICE_ERROR = "sudoplatform.ServiceError"
         const val SERVICE_ERROR_DECODING_ERROR = "sudoplatform.vault.DecodingError"
+        const val SERVICE_ERROR_ALREADY_REGISTERED_ERROR = "sudoplatform.vault.AlreadyRegistered"
     }
 
     /**

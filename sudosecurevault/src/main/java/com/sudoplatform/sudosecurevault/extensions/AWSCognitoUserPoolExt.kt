@@ -36,7 +36,7 @@ internal suspend fun CognitoUserPool.signUp(
                         )
                     }
                 } else {
-                    cont.resumeWithException(SudoSecureVaultException.FailedException("Sign up succeeded but not user ID was returned."))
+                    cont.resumeWithException(SudoSecureVaultException.FailedException("Sign up succeeded but no user ID was returned."))
                 }
             }
 
@@ -45,9 +45,25 @@ internal suspend fun CognitoUserPool.signUp(
                     val message = exception.message
                     if (message != null) {
                         if (message.contains(CognitoUserPoolIdentityProvider.SERVICE_ERROR_SERVICE_ERROR)) {
-                            cont.resumeWithException(SudoSecureVaultException.InternalServerException(message))
+                            cont.resumeWithException(
+                                SudoSecureVaultException.InternalServerException(
+                                    message
+                                )
+                            )
                         } else if (message.contains(CognitoUserPoolIdentityProvider.SERVICE_ERROR_DECODING_ERROR)) {
-                            cont.resumeWithException(SudoSecureVaultException.InvalidInputException(message))
+                            cont.resumeWithException(
+                                SudoSecureVaultException.InvalidInputException(
+                                    message
+                                )
+                            )
+                        } else if (message.contains(CognitoUserPoolIdentityProvider.SERVICE_ERROR_ALREADY_REGISTERED_ERROR)) {
+                            cont.resumeWithException(
+                                SudoSecureVaultException.AlreadyRegisteredException(
+                                    message
+                                )
+                            )
+                        } else {
+                            cont.resumeWithException(SudoSecureVaultException.FailedException(cause = exception))
                         }
                     } else {
                         cont.resumeWithException(SudoSecureVaultException.FailedException(cause = exception))

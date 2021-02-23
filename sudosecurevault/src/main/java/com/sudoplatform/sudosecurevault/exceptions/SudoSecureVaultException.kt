@@ -55,6 +55,12 @@ open class SudoSecureVaultException(message: String? = null, cause: Throwable? =
         SudoSecureVaultException(message = message, cause = cause)
 
     /**
+     * Indicates the user is already registered.
+     */
+    class AlreadyRegisteredException(message: String? = null, cause: Throwable? = null) :
+        SudoSecureVaultException(message = message, cause = cause)
+
+    /**
      * Indicates the user is not signed in but requested an operation that requires authentication.
      */
     class NotSignedInException(message: String? = null, cause: Throwable? = null) :
