@@ -427,3 +427,39 @@
   license: The Apache Software License, Version 2.0
   licenseUrl: https://www.apache.org/licenses/LICENSE-2.0.txt
   url: https://github.com/Kotlin/kotlinx.coroutines
+- artifact: org.bouncycastle:bcprov-jdk15to18:+
+  name: Bouncy Castle Provider
+  copyrightHolder: The Legion of the Bouncy Castle Inc.
+  license: Bouncy Castle Licence
+  licenseUrl: http://www.bouncycastle.org/licence.html
+  url: http://www.bouncycastle.org/java.html
+- artifact: com.appmattus.certificatetransparency:certificatetransparency:+
+  name: com.appmattus.certificatetransparency:certificatetransparency
+  copyrightHolder: Appmattus Limited
+  license: The Apache Software License, Version 2.0
+  licenseUrl: https://www.apache.org/licenses/LICENSE-2.0.txt
+  url: https://github.com/appmattus/certificatetransparency
+- artifact: org.bouncycastle:bctls-jdk15to18:+
+  name: Bouncy Castle JSSE provider and TLS/DTLS API
+  copyrightHolder: The Legion of the Bouncy Castle Inc.
+  license: Bouncy Castle Licence
+  licenseUrl: http://www.bouncycastle.org/licence.html
+  url: http://www.bouncycastle.org/java.html
+- artifact: com.appmattus.certificatetransparency:certificatetransparency-android:+
+  name: com.appmattus.certificatetransparency:certificatetransparency-android
+  copyrightHolder: Appmattus Limited
+  license: The Apache Software License, Version 2.0
+  licenseUrl: https://www.apache.org/licenses/LICENSE-2.0.txt
+  url: https://github.com/appmattus/certificatetransparency
+- artifact: org.jetbrains.kotlin:kotlin-stdlib-jdk8:+
+  name: org.jetbrains.kotlin:kotlin-stdlib-jdk8
+  copyrightHolder: Jetbrains, Inc.
+  license: The Apache License, Version 2.0
+  licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.txt
+  url: https://kotlinlang.org/
+- artifact: org.bouncycastle:bcpkix-jdk15to18:+
+  name: Bouncy Castle PKIX, CMS, EAC, TSP, PKCS, OCSP, CMP, and CRMF APIs
+  copyrightHolder: The Legion of the Bouncy Castle Inc.
+  license: Bouncy Castle Licence
+  licenseUrl: http://www.bouncycastle.org/licence.html
+  url: http://www.bouncycastle.org/java.html

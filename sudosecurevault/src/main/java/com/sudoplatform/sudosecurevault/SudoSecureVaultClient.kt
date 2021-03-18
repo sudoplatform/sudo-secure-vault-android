@@ -456,6 +456,8 @@ class DefaultSudoSecureVaultClient(
 
         private const val PBKDF_SALT_SIZE = 32
         private const val AES_BLOCK_SIZE = 16
+
+        private const val DEFAULT_KEY_NAMESPACE = "svs"
     }
 
     override val version: String = "1.0.0"
@@ -507,7 +509,7 @@ class DefaultSudoSecureVaultClient(
 
         this.logger.info("Initializing the client using config: $secureVaultServiceConfig")
 
-        this.keyManager = keyManager ?: KeyManagerFactory(context).createAndroidKeyManager()
+        this.keyManager = keyManager ?: KeyManagerFactory(context).createAndroidKeyManager(DEFAULT_KEY_NAMESPACE)
         this.identityProvider = identityProvider ?: CognitoUserPoolIdentityProvider(
             secureVaultServiceConfig,
             context,
