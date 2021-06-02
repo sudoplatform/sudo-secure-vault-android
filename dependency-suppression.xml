@@ -6,14 +6,14 @@
             ]]></notes>
         <cve>CVE-2018-20200</cve>
     </suppress>
-    <suppress until="2021-05-15">
+    <suppress until="2021-08-31">
         <notes><![CDATA[
             Kotlin script is not used in the Sudo Platform Secure Vault SDK. Set suppression to expire in
             2 months. Possibly a false positive because we are now using kotlin 1.4.30
             ]]></notes>
         <cve>CVE-2020-15824</cve>
     </suppress>
-    <suppress until="2021-05-15">
+    <suppress until="2021-08-31">
         <notes>
             <![CDATA[
             vulnerability is in a Java API used for temporary file and folder creation.
@@ -24,12 +24,30 @@
         </notes>
         <cve>CVE-2020-29582</cve>
     </suppress>
-    <suppress until="2021-05-15">
+    <suppress until="2021-08-31">
         <notes>
             <![CDATA[
             vulnerability is A comparison error in OpenBSDBCrypt.checkPassword(). checkPassword is not used.
             ]]>
         </notes>
         <cve>CVE-2020-28052</cve>
+    </suppress>
+    <suppress until="2021-08-31">
+        <notes>
+            <![CDATA[
+            False positive. Vulnerability relates to tmp files created via Guava which is not done.
+            ]]>
+        </notes>
+        <cve>CVE-2020-8908</cve>
+    </suppress>
+    <suppress until="2021-08-31">
+        <notes>
+            <![CDATA[
+            False positive. All issues relate to remote logging via log4j via Dokka dependencies which
+            is not exercised.
+            ]]>
+        </notes>
+        <cve>CVE-2020-9488</cve>
+        <cve>CVE-2019-17571</cve>
     </suppress>
 </suppressions>
